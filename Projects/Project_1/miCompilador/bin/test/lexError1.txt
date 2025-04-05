@@ -1,0 +1,10 @@
+a = 42a;  
+b = 4.2;  
+c = ab!;  
+x1 = 100z;  
+y2 = x1 - 50x;  
+resultado = 5 + #;  
+x = 4 * 2q;  
+valorFinal = 1234567890123;  
+variable1 == 10;  
+m = x / / 2;

@@ -1,0 +1,10 @@
+resultadoFinal = (a + b) * (x / y1a) - 7;  
+total = (x1 + y1) * (z1 - 9w) / (r3 * t);  
+producto = (a * b) ++ c;  
+x = ((a * b)) - 2;  
+y = 4 ** 2;  
+valorMaximo = (100k + 3) / (x + y);  
+temp = (t1 - 32) * (5 / 9.0);  
+area = ((base * altura)) / 2;  
+hipotenusa = (a ^ 2 + b ^ 2) ^^ 0.5;  
+media = (a + b + c) / 3_0; 

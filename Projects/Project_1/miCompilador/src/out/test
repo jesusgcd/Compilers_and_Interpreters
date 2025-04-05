@@ -1,0 +1,53 @@
+Lista de Tokens:
+Token{tipo: 'IDENTIFICADOR', valor: 'x', linea: 1}
+Token{tipo: 'ASIGNACION', valor: '=', linea: 1}
+Token{tipo: 'NUMERO', valor: '10', linea: 1}
+Token{tipo: 'PUNTO_COMA', valor: ';', linea: 1}
+Token{tipo: 'IDENTIFICADOR', valor: 'y', linea: 2}
+Token{tipo: 'ASIGNACION', valor: '=', linea: 2}
+Token{tipo: 'PARENTESIS_IZQ', valor: '(', linea: 2}
+Token{tipo: 'IDENTIFICADOR', valor: 'x', linea: 2}
+Token{tipo: 'SUMA', valor: '+', linea: 2}
+Token{tipo: 'NUMERO', valor: '5', linea: 2}
+Token{tipo: 'PARENTESIS_DER', valor: ')', linea: 2}
+Token{tipo: 'DIVISION', valor: '/', linea: 2}
+Token{tipo: 'NUMERO', valor: '3', linea: 2}
+Token{tipo: 'PUNTO_COMA', valor: ';', linea: 2}
+Token{tipo: 'IDENTIFICADOR', valor: 'z', linea: 3}
+Token{tipo: 'ASIGNACION', valor: '=', linea: 3}
+Token{tipo: 'IDENTIFICADOR', valor: 'y', linea: 3}
+Token{tipo: 'MULTIPLICACION', valor: '*', linea: 3}
+Token{tipo: 'PARENTESIS_IZQ', valor: '(', linea: 3}
+Token{tipo: 'NUMERO', valor: '2', linea: 3}
+Token{tipo: 'RESTA', valor: '-', linea: 3}
+Token{tipo: 'IDENTIFICADOR', valor: 'x', linea: 3}
+Token{tipo: 'PARENTESIS_DER', valor: ')', linea: 3}
+Token{tipo: 'PUNTO_COMA', valor: ';', linea: 3}
+
+Tabla de Símbolos:
+Tabla de Símbolos:
+Identificador: x -> Tipo: IDENTIFICADOR, Ámbito: global, Línea: 1
+Identificador: y -> Tipo: IDENTIFICADOR, Ámbito: global, Línea: 2
+Identificador: z -> Tipo: IDENTIFICADOR, Ámbito: global, Línea: 3
+
+Representación de los ASTs:
+
+AST 1:
+Asignacion: x
+  Numero: 10
+
+AST 2:
+Asignacion: y
+  Operacion Binaria: /
+    Operacion Binaria: +
+      Identificador: x
+      Numero: 5
+    Numero: 3
+
+AST 3:
+Asignacion: z
+  Operacion Binaria: *
+    Identificador: y
+    Operacion Binaria: -
+      Numero: 2
+      Identificador: x

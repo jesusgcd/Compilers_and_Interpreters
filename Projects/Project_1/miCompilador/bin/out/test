@@ -1,0 +1,47 @@
+Lista de Tokens:
+Token{tipo: 'IDENTIFICADOR', valor: 'a', linea: 1}
+Token{tipo: 'ASIGNACION', valor: '=', linea: 1}
+Token{tipo: 'NUMERO', valor: '42', linea: 1}
+Token{tipo: 'PUNTO_COMA', valor: ';', linea: 1}
+Token{tipo: 'IDENTIFICADOR', valor: 'b', linea: 2}
+Token{tipo: 'ASIGNACION', valor: '=', linea: 2}
+Token{tipo: 'IDENTIFICADOR', valor: 'a', linea: 2}
+Token{tipo: 'SUMA', valor: '+', linea: 2}
+Token{tipo: 'NUMERO', valor: '7', linea: 2}
+Token{tipo: 'PUNTO_COMA', valor: ';', linea: 2}
+Token{tipo: 'IDENTIFICADOR', valor: 'c', linea: 3}
+Token{tipo: 'ASIGNACION', valor: '=', linea: 3}
+Token{tipo: 'PARENTESIS_IZQ', valor: '(', linea: 3}
+Token{tipo: 'IDENTIFICADOR', valor: 'a', linea: 3}
+Token{tipo: 'MULTIPLICACION', valor: '*', linea: 3}
+Token{tipo: 'IDENTIFICADOR', valor: 'b', linea: 3}
+Token{tipo: 'PARENTESIS_DER', valor: ')', linea: 3}
+Token{tipo: 'RESTA', valor: '-', linea: 3}
+Token{tipo: 'NUMERO', valor: '2', linea: 3}
+Token{tipo: 'PUNTO_COMA', valor: ';', linea: 3}
+
+Tabla de Símbolos:
+Tabla de Símbolos:
+Identificador: a -> Tipo: IDENTIFICADOR, Ámbito: global, Línea: 1
+Identificador: b -> Tipo: IDENTIFICADOR, Ámbito: global, Línea: 2
+Identificador: c -> Tipo: IDENTIFICADOR, Ámbito: global, Línea: 3
+
+Representación de los ASTs:
+
+AST 1:
+Asignacion: a
+  Numero: 42
+
+AST 2:
+Asignacion: b
+  Operacion Binaria: +
+    Identificador: a
+    Numero: 7
+
+AST 3:
+Asignacion: c
+  Operacion Binaria: -
+    Operacion Binaria: *
+      Identificador: a
+      Identificador: b
+    Numero: 2
